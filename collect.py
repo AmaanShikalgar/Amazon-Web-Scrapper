@@ -21,7 +21,6 @@ for file in os.listdir("data"):
         
         #link
         a = soup.find("a", class_="a-link-normal")
-
         link = None 
         if a:
             href = a.get("href")
@@ -36,5 +35,11 @@ for file in os.listdir("data"):
     except Exception as e:
         print(e)
         
+#create dataframe        
 df = pd.DataFrame(data=d)
-df.to_csv("data.csv")
+
+df = df.dropna()
+#save csv
+df.to_csv("data.csv",index=False)
+
+print("Data Saved to data.csv")

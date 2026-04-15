@@ -8,7 +8,8 @@ if not os.path.exists("data"):
     os.makedirs("data")
 
 driver = webdriver.Chrome()
-query = "laptop"
+query = input("Enter Product ot search: ")
+query = query.replace(" ", "+")
 file = 0
 
 for i in range(1,20):
