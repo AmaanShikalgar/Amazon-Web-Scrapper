@@ -16,4 +16,5 @@
    pip install -r requirements.txt
 
 2. Run script:
+   python project.py
    python collect.py
