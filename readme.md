@@ -1,20 +1,27 @@
-# Amazon Web Scraper
+# 🛒 Amazon Web Scraper
+
+A dynamic web scraper built using Python that extracts product data from Amazon, including titles, prices, and links, and stores it in a structured CSV format.
+
+---
 
 ## Features
-- Scrapes product title, price, and links
-- Uses Selenium + BeautifulSoup
-- Saves data to CSV
+-  Search products dynamically (user input supported)
+-  Scrapes multiple pages automatically
+-  Extracts:
+  - Product Title
+  - Price
+  - Product Link
+-  Saves data into CSV file
+-  Handles missing data safely (no crashes)
 
-## Tech Stack
+---
+
+##  Tech Stack
 - Python
 - Selenium
 - BeautifulSoup
 - Pandas
 
-## How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
+---
 
-2. Run script:
-   python project.py
-   python collect.py
+##  Project Structure
